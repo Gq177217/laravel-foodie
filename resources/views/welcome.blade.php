@@ -45,18 +45,13 @@
             @endif
                         
             <div id="app">
-            <body>
-            <h1 class="mt-2">FOODIE</h1>
-            <section id="mission">
-           <div id="mission-flex">
-           <div>
-               <img src="img/NYC.jpeg" alt="写真">
-
-             </a>
-           </div>
-         </div>
-         </section>
-
-            </html>   
+                <h1 class="front-page-text">FOODIE</h1>
+                <div id="foodie-flex">
+                        <img src="img/NYC.jpeg" alt="写真">
+                </div>
+                <div class="front-page-backgrand"></div>
+             </div>
+            </div>
+        </html>   
 
             

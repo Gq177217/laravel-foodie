@@ -3,26 +3,37 @@
    <div class="container">
      <a class="navbar-brand" href="{{ url('/') }}">
 
-     <!--Logo and size--------------------------------------------------------------------->
+     <!--Logo and size-->
      <img src="{{asset('img/logo.png')}}" alt="Foodie" style="width: 100px; height: auto;">  
 
      </a>
      <form class="row g-1">
        <div class="col-auto">
-       <h2 class="mt-2">おいしいお店を探す</h2>
+       <h2 class="front-page-comment">おいしいお店を探す</h2>
          <input class="form-control foodie-header-search-input" placeholder="店名" >
        </div>
        <div class="col-auto">
          <button type="submit" class="btn foodie-header-search-button"><i class="fas fa-search foodie-header-search-icon"></i></button>
        </div>
        
-       <select> 
-       <option>カテゴリ</option> 
-       <option>居酒屋</option> 
-       <option>焼肉</option> 
-       <option>🍣</option> 
-     </select>
-     <br> 
+       <div>
+      <form action="#" method="GET">
+        <select class="front-page-custum-pull" name="category" id="category">
+          <option value="">カテゴリ</option>
+          <option value="居酒屋">居酒屋</option>
+          <option value="焼肉">焼肉</option>
+          <option value="すし">すし</option>
+          <option value="イタリアン">イタリアン</option>
+          <option value="メキシカン">メキシカン</option>
+          <option value="居酒屋">居酒屋</option>
+          <option value="焼肉">焼肉</option>
+          <option value="すし">すし</option>
+          <option value="イタリアン">イタリアン</option>
+          <option value="メキシカン">メキシカン</option>
+      </select>
+      <input class="front-search-button" type="submit" name="submit" value="検索" />
+    </form>
+     </div>
      </form>
 
      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
