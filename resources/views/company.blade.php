@@ -17,19 +17,10 @@
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 
     <!-- Styles -->
-    <link href="{{ asset('css/log.css') }}" rel="stylesheet">
-    
+    <link href="{{ asset('css/log.css') }}" rel="stylesheet">   
 </head>
+
 <body>
-    <div id="app">
-
-        @component('components.header')
-        @endcomponent
-
-        <main class="py-4 mb-5">
-            @yield('content')
-        </main>
-
-    </div>
+<h1>会社紹介</h1>
 </body>
 </html>

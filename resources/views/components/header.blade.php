@@ -45,12 +45,6 @@
        <ul class="navbar-nav ms-auto mr-5 mt-2">
          <!-- Authentication Links -->
          @guest
-        <!-- <li class="nav-item mr-5">
-           <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-         </li>
-         <li class="nav-item mr-5">
-           <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-         </li> -->
 
          <hr>
          <li class="nav-item mr-5">

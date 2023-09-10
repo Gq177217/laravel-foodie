@@ -38,8 +38,8 @@
                             <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 ">新規登録</a>
                         @endif
                     @endauth             
-                    <a href="{{ asset('/layouts/company.blade.php') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 ">会社情報</a> 
-                    <!--<a href="{{ asset('/layouts/company.blade.php') }}" rel="stylesheet">会社情報</a> -->
+                    <a href="{{ route('company') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 ">会社情報</a> 
+                 
                 </div>
     
             @endif

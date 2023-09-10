@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\RestaurantController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,3 +20,10 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/company', [App\Http\Controllers\CompanyController::class, 'index'])->name('company');
+
+Route::get('/restaurant', [App\Http\Controllers\RestaurantController::class, 'index'])->name('restaurant');
+
+
+Route::resource('restaurants', RestaurantController::class);
